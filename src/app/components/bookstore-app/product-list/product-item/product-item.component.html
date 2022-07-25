@@ -1,0 +1,19 @@
+<div class="card shadow-sm">
+  <img
+    class="bd-placeholder-img cardimg-top"
+    width="100%"
+    src="https://www.imgacademy.com/sites/default/files/styles/scale_1700w/public/2017-05/0x060a2b340101010201010f12132626ed011ab9049177058001b9000D3A162A40.jpeg?itok=k3RtK9yA"
+  />
+  <div class="card-body">
+    <p class="card-text">{{ book.name }}</p>
+    <p class="card-text">{{ book.category }}</p>
+    <p class="card-text">{{ book.quantity }}</p>
+    <p class="card-text">{{ book.price | currency: "BRL"}}</p>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary btn-sm">Comprar</button>
+      <button type="button" class="btn btn-outline-primary btn-sm">
+        Detalhes
+      </button>
+    </div>
+  </div>
+</div>

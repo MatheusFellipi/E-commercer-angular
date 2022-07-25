@@ -9,6 +9,8 @@ import { BookstoreAppComponent } from './components/bookstore-app/bookstore-app.
 import { FiltersComponent } from './components/bookstore-app/filters/filters.component';
 import { ProductListComponent } from './components/bookstore-app/product-list/product-list.component';
 import { NavComponent } from './components/shared/nav/nav.component';
+import { BookService } from './components/bookstore-app/product-list/product-list.service';
+import { ProductItemComponent } from './components/bookstore-app/product-list/product-item/product-item.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,14 @@ import { NavComponent } from './components/shared/nav/nav.component';
     BookstoreAppComponent,
     FiltersComponent,
     ProductListComponent,
-    NavComponent
+    NavComponent,
+    ProductItemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [BookService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
